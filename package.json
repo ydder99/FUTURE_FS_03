@@ -1,0 +1,34 @@
+{
+  "name": "saffron-and-sage",
+  "version": "1.0.0",
+  "description": "Modern Indian Fusion Restaurant — Full-stack website with contact form, email notifications, and deployment-ready setup.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js",
+    "test": "echo \"No tests configured yet\" && exit 0"
+  },
+  "keywords": [
+    "restaurant",
+    "indian-fusion",
+    "nodejs",
+    "express",
+    "contact-form",
+    "local-business"
+  ],
+  "author": "Ambate Vishnu Reddy",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "express-validator": "^7.2.0",
+    "helmet": "^7.1.0",
+    "nodemailer": "^6.9.15"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

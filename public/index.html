@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Saffron & Sage — Modern Indian fusion restaurant offering a unique culinary experience blending traditional Indian flavors with contemporary techniques. Reserve your table today." />
+  <meta name="keywords" content="Indian fusion restaurant, fine dining, saffron, sage, modern Indian cuisine, reservation, local restaurant" />
+  <meta name="author" content="Saffron & Sage" />
+  <meta property="og:title" content="Saffron & Sage — Modern Indian Fusion Dining" />
+  <meta property="og:description" content="Experience the art of Indian fusion cuisine. Bold flavors, elegant ambiance, unforgettable dining." />
+  <meta property="og:type" content="website" />
+  <title>Saffron & Sage — Modern Indian Fusion Dining</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Lucide Icons CDN -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍃%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ═══════════ LOADING SCREEN ═══════════ -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">Saffron <span>&</span> Sage</div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- ═══════════ ANIMATED BACKGROUND ═══════════ -->
+  <div class="bg-orbs">
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
+
+  <!-- ═══════════ NAVIGATION ═══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <div class="nav-logo-icon">🍃</div>
+        <div class="nav-logo-text">Saffron <span>&</span> Sage</div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary nav-cta">Reserve Table</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ═══════════ HERO SECTION ═══════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="images/restaurant-interior.png" alt="Saffron & Sage restaurant interior" loading="eager" />
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Now Accepting Reservations
+        </div>
+
+        <h1 class="hero-title">
+          Where <span class="highlight">Indian Tradition</span> Meets
+          <span class="italic">Modern Craft</span>
+        </h1>
+
+        <p class="hero-description">
+          Discover a culinary journey that reimagines beloved Indian flavors through
+          contemporary techniques. Every dish tells a story of heritage, innovation,
+          and passion.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary" id="hero-cta-menu">
+            Explore Menu
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-outline" id="hero-cta-reserve">Reserve a Table</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <h3 data-count="12" data-suffix="+">0</h3>
+            <p>Years of Excellence</p>
+          </div>
+          <div class="hero-stat">
+            <h3 data-count="50" data-suffix="K+">0</h3>
+            <p>Happy Guests</p>
+          </div>
+          <div class="hero-stat">
+            <h3 data-count="4" data-suffix=".8 ★">0</h3>
+            <p>Google Rating</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="images/hero-dish.png" alt="Signature saffron lamb chops" loading="eager" />
+        </div>
+
+        <div class="hero-float-card card-rating">
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="rating-text">4.8 / 5.0</div>
+            <div class="rating-sub">2,400+ Reviews</div>
+          </div>
+        </div>
+
+        <div class="hero-float-card card-hours">
+          <div class="time">11 AM — 11 PM</div>
+          <div class="status">
+            <span class="dot"></span>
+            Open Now
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT SECTION ═══════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-images reveal">
+        <div class="about-img">
+          <img src="images/chef-portrait.png" alt="Chef Arjun Patel, Head Chef at Saffron & Sage" loading="lazy" />
+        </div>
+        <div class="about-img">
+          <img src="images/restaurant-interior.png" alt="Elegant dining area" loading="lazy" />
+        </div>
+        <div class="about-img">
+          <img src="images/gallery-spices.png" alt="Fresh Indian spices" loading="lazy" />
+        </div>
+        <div class="about-experience">
+          <h3>12+</h3>
+          <p>Years of<br/>Excellence</p>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="section-label reveal">Our Story</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          A Passion for <span>Flavor</span> &amp; Heritage
+        </h2>
+        <p class="section-subtitle reveal reveal-delay-2">
+          Founded in 2014 by Chef Arjun Patel, Saffron & Sage was born from a
+          dream to bridge the gap between India's rich culinary traditions and the
+          modern dining experience. Every ingredient is sourced with intention,
+          every recipe crafted with soul.
+        </p>
+
+        <div class="feature-list">
+          <div class="feature-item reveal reveal-delay-1">
+            <div class="feature-icon">🌿</div>
+            <div>
+              <h4>Farm to Table</h4>
+              <p>Locally sourced organic ingredients</p>
+            </div>
+          </div>
+          <div class="feature-item reveal reveal-delay-2">
+            <div class="feature-icon">🔥</div>
+            <div>
+              <h4>Live Tandoor</h4>
+              <p>Authentic clay-oven cooking</p>
+            </div>
+          </div>
+          <div class="feature-item reveal reveal-delay-3">
+            <div class="feature-icon">🍷</div>
+            <div>
+              <h4>Curated Pairings</h4>
+              <p>Wine & cocktail accompaniments</p>
+            </div>
+          </div>
+          <div class="feature-item reveal reveal-delay-4">
+            <div class="feature-icon">🎯</div>
+            <div>
+              <h4>Private Dining</h4>
+              <p>Exclusive events & celebrations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ MENU SECTION ═══════════ -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label reveal">Our Menu</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Crafted with <span>Love</span> & Spice
+        </h2>
+        <p class="section-subtitle reveal reveal-delay-2">
+          Each dish is a fusion of traditional Indian recipes and modern culinary
+          artistry, using the freshest seasonal ingredients.
+        </p>
+      </div>
+
+      <!-- Menu Tabs -->
+      <div class="menu-tabs reveal">
+        <button class="menu-tab active" data-category="all" id="tab-all">All</button>
+        <button class="menu-tab" data-category="starters" id="tab-starters">Starters</button>
+        <button class="menu-tab" data-category="mains" id="tab-mains">Mains</button>
+        <button class="menu-tab" data-category="desserts" id="tab-desserts">Desserts</button>
+        <button class="menu-tab" data-category="drinks" id="tab-drinks">Drinks</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid">
+        <!-- Starter 1 -->
+        <div class="menu-card reveal" data-category="starters">
+          <div class="menu-card-image">
+            <img src="images/dish-starter.png" alt="Crispy Paneer Tikka Bites" loading="lazy" />
+            <span class="menu-card-badge">Chef's Pick</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Paneer Tikka Bites</h3>
+              <span class="menu-card-price">₹495</span>
+            </div>
+            <p class="menu-card-desc">
+              Crispy smoked paneer cubes glazed with tamarind reduction,
+              served with mint-coriander chutney and pickled onions.
+            </p>
+            <div class="menu-card-tags">
+              <span class="menu-card-tag">Vegetarian</span>
+              <span class="menu-card-tag">Gluten-Free</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Starter 2 -->
+        <div class="menu-card reveal reveal-delay-1" data-category="starters">
+          <div class="menu-card-image">
+            <img src="images/dish-tandoori.png" alt="Tandoori Chicken Tikka" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Tandoori Tikka Skewers</h3>
+              <span class="menu-card-price">₹595</span>
+            </div>
+            <p class="menu-card-desc">
+              Free-range chicken marinated in yogurt, Kashmiri chili,
+              and aromatic spices, grilled in our live tandoor.
+            </p>
+            <div class="menu-card-tags">
+              <span class="menu-card-tag">Signature</span>
+              <span class="menu-card-tag">Spicy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main 1 -->
+        <div class="menu-card reveal reveal-delay-2" data-category="mains">
+          <div class="menu-card-image">
+            <img src="images/dish-biryani.png" alt="Deconstructed Royal Biryani" loading="lazy" />
+            <span class="menu-card-badge">Bestseller</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Royal Biryani</h3>
+              <span class="menu-card-price">₹895</span>
+            </div>
+            <p class="menu-card-desc">
+              Deconstructed Lucknowi biryani with saffron basmati,
+              slow-braised lamb, crispy onions, and raita foam.
+            </p>
+            <div class="menu-card-tags">
+              <span class="menu-card-tag">Signature</span>
+              <span class="menu-card-tag">Award-Winning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main 2 -->
+        <div class="menu-card reveal reveal-delay-3" data-category="mains">
+          <div class="menu-card-image">
+            <img src="images/hero-dish.png" alt="Saffron Lamb Chops" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Saffron Lamb Chops</h3>
+              <span class="menu-card-price">₹1,195</span>
+            </div>
+            <p class="menu-card-desc">
+              New Zealand lamb chops infused with saffron and rosemary,
+              served with sage-butter mashed potatoes and jus.
+            </p>
+            <div class="menu-card-tags">
+              <span class="menu-card-tag">Premium</span>
+              <span class="menu-card-tag">Gluten-Free</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dessert -->
+        <div class="menu-card reveal" data-category="desserts">
+          <div class="menu-card-image">
+            <img src="images/dish-dessert.png" alt="Rose Cardamom Panna Cotta" loading="lazy" />
+            <span class="menu-card-badge">New</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Rose Panna Cotta</h3>
+              <span class="menu-card-price">₹445</span>
+            </div>
+            <p class="menu-card-desc">
+              Silky rose and cardamom panna cotta crowned with pistachio
+              crumble, edible gold leaf, and saffron syrup.
+            </p>
+            <div class="menu-card-tags">
+              <span class="menu-card-tag">Vegetarian</span>
+              <span class="menu-card-tag">Dessert</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drink -->
+        <div class="menu-card reveal reveal-delay-1" data-category="drinks">
+          <div class="menu-card-image">
+            <img src="images/dish-cocktail.png" alt="Mango Cardamom Gin" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Mango Cardamom Gin</h3>
+              <span class="menu-card-price">₹595</span>
+            </div>
+            <p class="menu-card-desc">
+              Alphonso mango-infused gin with cardamom tonic, garnished
+              with edible flowers and a rim of roasted cumin salt.
+            </p>
+            <div class="menu-card-tags">
+              <span class="menu-card-tag">Cocktail</span>
+              <span class="menu-card-tag">House Special</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ GALLERY SECTION ═══════════ -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label reveal">Gallery</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          A Glimpse Inside <span>Our World</span>
+        </h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal">
+          <img src="images/restaurant-interior.png" alt="Elegant dining atmosphere" loading="lazy" />
+          <div class="gallery-overlay">
+            <h4>The Dining Room</h4>
+            <p>Warm, intimate ambiance</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="images/hero-dish.png" alt="Signature lamb dish" loading="lazy" />
+          <div class="gallery-overlay">
+            <h4>Signature Dishes</h4>
+            <p>Crafted with passion</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-2">
+          <img src="images/gallery-spices.png" alt="Fresh Indian spices" loading="lazy" />
+          <div class="gallery-overlay">
+            <h4>The Spice Palette</h4>
+            <p>Imported & indigenous</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-3">
+          <img src="images/dish-biryani.png" alt="Royal biryani presentation" loading="lazy" />
+          <div class="gallery-overlay">
+            <h4>Plating Artistry</h4>
+            <p>Visual storytelling</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/gallery-bar.png" alt="Cocktail bar area" loading="lazy" />
+          <div class="gallery-overlay">
+            <h4>The Bar</h4>
+            <p>Spice-infused cocktails</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal reveal-delay-1">
+          <img src="images/dish-dessert.png" alt="Rose panna cotta dessert" loading="lazy" />
+          <div class="gallery-overlay">
+            <h4>Sweet Endings</h4>
+            <p>Artisan desserts</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ TESTIMONIALS ═══════════ -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label reveal">Testimonials</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          What Our <span>Guests</span> Say
+        </h2>
+        <p class="section-subtitle reveal reveal-delay-2">
+          Don't just take our word for it — hear from the people who've
+          experienced the Saffron & Sage magic.
+        </p>
+      </div>
+
+      <div class="testimonials-wrapper">
+        <div class="testimonials-track">
+          <!-- Review 1 -->
+          <div class="testimonial-card reveal">
+            <span class="testimonial-quote">"</span>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Absolutely mind-blowing experience! The Saffron Lamb Chops
+              were the best I've ever had. The ambiance, service, and
+              attention to detail are extraordinary."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background: linear-gradient(135deg, #d4a574, #87a878); display: flex; align-items: center; justify-content: center; color: #1a1a2e; font-weight: 700; font-size: 1.1rem;">
+                RP
+              </div>
+              <div class="testimonial-info">
+                <h4>Riya Patel</h4>
+                <p>Food Blogger · Google Review</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card reveal reveal-delay-1">
+            <span class="testimonial-quote">"</span>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "We hosted our anniversary dinner here and it was perfect.
+              The private dining setup, personalized menu, and Chef
+              Arjun's special tasting course made it unforgettable."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background: linear-gradient(135deg, #8b2252, #d4a574); display: flex; align-items: center; justify-content: center; color: #f5f0e8; font-weight: 700; font-size: 1.1rem;">
+                AM
+              </div>
+              <div class="testimonial-info">
+                <h4>Anil & Meera Sharma</h4>
+                <p>Regular Guests · Zomato Review</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card reveal reveal-delay-2">
+            <span class="testimonial-quote">"</span>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "As a vegetarian, I often feel limited at fine dining spots.
+              Saffron & Sage changed that completely. Their vegetarian
+              menu is just as innovative and exciting as the non-veg!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" style="background: linear-gradient(135deg, #87a878, #d4a574); display: flex; align-items: center; justify-content: center; color: #1a1a2e; font-weight: 700; font-size: 1.1rem;">
+                SK
+              </div>
+              <div class="testimonial-info">
+                <h4>Sneha Kulkarni</h4>
+                <p>Tech Professional · Instagram</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT SECTION ═══════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <!-- Left: Contact Info -->
+      <div class="contact-info">
+        <div class="section-label reveal">Get in Touch</div>
+        <h2 class="section-title reveal reveal-delay-1">
+          Reserve Your <span>Table</span>
+        </h2>
+        <p class="section-subtitle reveal reveal-delay-2">
+          Whether it's a romantic dinner, a family celebration, or a
+          corporate event — we'd love to host you.
+        </p>
+
+        <div class="contact-info-cards">
+          <div class="contact-card reveal">
+            <div class="contact-card-icon">📍</div>
+            <div>
+              <h4>Visit Us</h4>
+              <p>42, MG Road, Koregaon Park<br/>Pune, Maharashtra 411001</p>
+            </div>
+          </div>
+
+          <div class="contact-card reveal reveal-delay-1">
+            <div class="contact-card-icon">📞</div>
+            <div>
+              <h4>Call Us</h4>
+              <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card reveal reveal-delay-2">
+            <div class="contact-card-icon">✉️</div>
+            <div>
+              <h4>Email Us</h4>
+              <p><a href="mailto:hello@saffronandsage.in">hello@saffronandsage.in</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card reveal reveal-delay-3">
+            <div class="contact-card-icon">🕐</div>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>Mon–Fri: 11 AM — 11 PM<br/>Sat–Sun: 10 AM — 12 AM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="contact-form-wrapper reveal">
+        <h3>Send Us a Message</h3>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Full Name *</label>
+              <input type="text" class="form-input" id="name" name="name"
+                     placeholder="Your full name" required />
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address *</label>
+              <input type="email" class="form-input" id="email" name="email"
+                     placeholder="you@example.com" required />
+              <span class="form-error" id="email-error"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input type="tel" class="form-input" id="phone" name="phone"
+                     placeholder="+91 98765 43210" />
+              <span class="form-error" id="phone-error"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject *</label>
+              <select class="form-select" id="subject" name="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="reservation">Table Reservation</option>
+                <option value="private-dining">Private Dining</option>
+                <option value="catering">Catering Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="form-error" id="subject-error"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Message *</label>
+            <textarea class="form-textarea" id="message" name="message"
+                      placeholder="Tell us how we can help..." required></textarea>
+            <span class="form-error" id="message-error"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit" id="submit-contact">
+            Send Message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+        </form>
+
+        <!-- Success Message -->
+        <div class="form-success" id="formSuccess">
+          <div class="form-success-icon">✓</div>
+          <h4>Message Sent!</h4>
+          <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ GOOGLE MAPS ═══════════ -->
+  <section class="map-section" id="map">
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.0495!2d73.8930!3d18.5350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMyJzA2LjAiTiA3M8KwNTMnMzQuOCJF!5e0!3m2!1sen!2sin!4v1600000000000"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Saffron & Sage Location on Google Maps"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <div class="nav-logo-icon">🍃</div>
+            <div class="nav-logo-text">Saffron <span>&</span> Sage</div>
+          </a>
+          <p>
+            Redefining Indian cuisine with a modern twist. Every meal at
+            Saffron & Sage is a celebration of flavors, traditions, and
+            the joy of sharing food.
+          </p>
+          <div class="footer-social">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" id="social-instagram">📷</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" id="social-facebook">📘</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" id="social-twitter">🐦</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" id="social-youtube">🎬</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#contact">Private Dining</a></li>
+            <li><a href="#contact">Catering</a></li>
+            <li><a href="#contact">Corporate Events</a></li>
+            <li><a href="#contact">Gift Cards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Saffron & Sage. All rights reserved.</p>
+        <p>Crafted with ❤️ in Pune, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════ WHATSAPP FLOATING BUTTON ═══════════ -->
+  <a href="https://wa.me/919876543210?text=Hi%20Saffron%20%26%20Sage!%20I'd%20like%20to%20make%20a%20reservation."
+     class="whatsapp-btn"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp"
+     id="whatsapp-btn">
+    💬
+  </a>
+
+  <!-- ═══════════ BACK TO TOP ═══════════ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
